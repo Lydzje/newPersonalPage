@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 html,
 body {
     background-color: #252A35;
@@ -13,9 +22,10 @@ body {
 
 .wrapper {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    flex-direction: column;
 }
 
 #lydzje {
@@ -27,7 +37,6 @@ body {
 }
 
 #line {
-    display: block;
     width: 0%;
     height: 2px;
     margin: auto;
@@ -57,4 +66,43 @@ body {
     to {
 	background-position: 100% 0%;
     }
+}
+
+#buttons {
+    display: flex;
+    margin: 100px 0;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.button {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 20px 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    padding: 15px;
+    margin: 15px 25px;
+}
+
+.portfolio {
+    border-color: #EE7752;
+    color: #EE7752;
+}
+
+.about-me {
+    border-color: #E73C7E;
+    color: #E73C7E;
+}
+
+.contact {
+    border-color: #24A6D5;
+    color: #24A6D5;
 }
