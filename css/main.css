@@ -70,6 +70,7 @@ body {
 
 #buttons {
     display: flex;
+    flex-direction: column;
     margin: 10vh 0;
     opacity: 0;
     -webkit-transition: opacity 1s;
@@ -117,12 +118,10 @@ body {
     color: #24A6D5;
 }
 
-
 /* RESPONSIVE DESIGN */
 /* ================= */
-/* TODO: Mobile first */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
     #buttons {
-	flex-direction: column;
+	flex-direction: row;
     }
 }
