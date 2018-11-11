@@ -70,19 +70,21 @@ body {
 
 #buttons {
     display: flex;
-    margin: 100px 0;
+    margin: 10vh 0;
     opacity: 0;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 1px solid white;
     padding: 10px;
     margin: 20px 30px;
     vertical-align: middle;
     font-weight: bold;
-    text-align: center;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -113,4 +115,14 @@ body {
 .contact {
     border-color: #24A6D5;
     color: #24A6D5;
+}
+
+
+/* RESPONSIVE DESIGN */
+/* ================= */
+/* TODO: Mobile first */
+@media only screen and (max-width: 600px) {
+    #buttons {
+	flex-direction: column;
+    }
 }
