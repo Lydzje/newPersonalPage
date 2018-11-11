@@ -80,6 +80,7 @@ body {
     border: 1px solid white;
     padding: 10px;
     margin: 20px 30px;
+    vertical-align: middle;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -90,6 +91,13 @@ body {
 .button:hover {
     padding: 15px;
     margin: 15px 25px;
+    border-color: white;
+    color: white;
+}
+
+.button i {
+    margin-right: 10px;
+    font-size: 20px;    
 }
 
 .portfolio {
