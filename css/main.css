@@ -28,6 +28,11 @@ body {
     flex-direction: column;
 }
 
+.site-title-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
 #lydzje {
     font-size: 72px;
     border-bottom: 2px solid gradient;
@@ -108,9 +113,19 @@ body {
     color: #EE7752;
 }
 
+.portfolio:active {
+    border-color: rgb(114, 27, 0);
+    color: rgb(114, 27, 0);
+}
+
 .about-me {
     border-color: #E73C7E;
     color: #E73C7E;
+}
+
+.about-me:active {
+    border-color: rgb(114, 0, 44);
+    color: rgb(114, 0, 44);
 }
 
 .contact {
@@ -118,10 +133,21 @@ body {
     color: #24A6D5;
 }
 
-/* RESPONSIVE DESIGN */
-/* ================= */
-@media only screen and (min-width: 600px) {
+.contact:active {
+    border-color: rgb(0, 84, 114);
+    color: rgb(0, 84, 114);
+}
+
+
+/* MEDIA QUERIES */
+/* ============= */
+@media only screen and (min-width: 960px) {
+    .wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+    
     #buttons {
-	flex-direction: row;
+	    flex-direction: row;
     }
 }
